@@ -8,7 +8,7 @@ on:
 
 jobs:
   validate-articles:
-    if: github.event_name == "nonexistent"
+    if: github.event_name == 'nonexistent'
     uses: PDFtoMark/gab-poc-pub-callee/.github/workflows/validate-articles.yml@main
     with:
       debug: true
